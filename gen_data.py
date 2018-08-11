@@ -182,7 +182,7 @@ def generate_test_data(vocab_ids, writer_lm_all, writer_seq_ae_all):
     writer_class.write(label_seq.seq.SerializeToString())
     # writer_bd_class.write(bd_label_seq.seq.SerializeToString())
     lm_seq_ser = lm_seq.seq.SerializeToString()
-    seq_ae_seq_ser = seq_ae_seq.seq.SerializeToString()
+    # seq_ae_seq_ser = seq_ae_seq.seq.SerializeToString()
     writer_lm.write(lm_seq_ser)
     # writer_rev_lm.write(rev_lm_seq.seq.SerializeToString())
     # writer_seq_ae.write(seq_ae_seq_ser)
