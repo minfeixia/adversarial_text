@@ -138,12 +138,12 @@ def generate_training_data(vocab_ids, writer_lm_all, writer_seq_ae_all):
 
     # Write
     lm_seq_ser = lm_seq.seq.SerializeToString()
-    seq_ae_seq_ser = seq_ae_seq.seq.SerializeToString()
+    # seq_ae_seq_ser = seq_ae_seq.seq.SerializeToString()
     writer_lm_all.write(lm_seq_ser)
     # writer_seq_ae_all.write(seq_ae_seq_ser)
     if not doc.is_validation:
       writer_lm.write(lm_seq_ser)
-      writer_rev_lm.write(rev_lm_seq.seq.SerializeToString())
+    #   writer_rev_lm.write(rev_lm_seq.seq.SerializeToString())
     #   writer_seq_ae.write(seq_ae_seq_ser)
 
   # Close writers
